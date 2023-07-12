@@ -257,6 +257,7 @@ router.delete('/delete-payment/:id',(req,res,next)=>{
 router.post('/create-admin',(req,res,next)=>{
     AdminSchema.create(req.body,(error,data)=>{
         if(error){
+            console.log(error.message);
             return next(error);
         }
         else{
