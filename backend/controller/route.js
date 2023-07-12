@@ -397,9 +397,9 @@ const sch_qu = new mongoose.Schema({
 })
 const Load = mongoose.model("invoicedats1",sch_in)
 const Load_Q = mongoose.model("quotedatas",sch_qu)
-mongoose.connect("mongodb+srv://nithya:ZF8nOoyeTTd9lJgV@cluster0.l0zh4uf.mongodb.net/?retryWrites=true&w=majority",{
-    useNewUrlParser: true, useUnifiedTopology: true
-})
+// mongoose.connect("mongodb+srv://nithya:ZF8nOoyeTTd9lJgV@cluster0.l0zh4uf.mongodb.net/?retryWrites=true&w=majority",{
+//     useNewUrlParser: true, useUnifiedTopology: true
+// })
 router.get("/a-b", async(req,res)=>{
     const data = await Load.find({});
     res.send({data})
