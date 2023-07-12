@@ -61,6 +61,7 @@ const paymentSchema = require('../model/paymentschema');
 router.post('/create-invoice',(req,res,next)=>{
     invoiceSchema.create(req.body,(error,data)=>{
         if(error){
+            console.log(error.message);
             return next(error);
         }
         else{
