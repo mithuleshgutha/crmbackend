@@ -399,7 +399,7 @@ const Load_Q = mongoose.model("quotedatas",sch_qu)
 mongoose.connect("mongodb+srv://nithya:ZF8nOoyeTTd9lJgV@cluster0.l0zh4uf.mongodb.net/?retryWrites=true&w=majority",{
     useNewUrlParser: true, useUnifiedTopology: true
 })
-router.get("/ab", async(req,res)=>{
+router.get("/a-b", async(req,res)=>{
     const data = await Load.find({});
     res.send({data})
 })
